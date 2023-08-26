@@ -6,3 +6,6 @@
 @import './base/section-title.css';
 
 @import './layout/header.css';
+@import './layout/hero.css';
+@import './layout/modal.css';
+@import './layout/footer.css';

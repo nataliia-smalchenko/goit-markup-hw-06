@@ -1,0 +1,249 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--modal-color);
+
+  transition: opacity var(--transition-dur-and-func),
+    visibility var(--transition-dur-and-func);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+
+  background-color: var(--modal-background);
+  min-height: 584px;
+  transition: transform var(--transition-dur-and-func);
+}
+
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  line-height: 0;
+
+  background-color: var(--accent);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  transition: background-color var(--transition-dur-and-func),
+    border var(--transition-dur-and-func);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  background-color: var(--pressed-state);
+  border: none;
+}
+
+.modal-close-icon {
+  fill: var(--dark);
+  transition: fill var(--transition-dur-and-func);
+}
+
+.modal-close:hover .modal-close-icon,
+.modal-close:focus .modal-close-icon {
+  fill: var(--white);
+}
+
+.modal-title {
+  color: var(--dark, #2e2f42);
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 16px;
+}
+
+.modal-form-field-wrapper {
+  margin-bottom: 8px;
+}
+
+.modal-form-input-wrapper {
+  position: relative;
+}
+
+.modal-form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--subtle-text);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal-form-field {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: border-color var(--transition-dur-and-func);
+
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--modal-color);
+  background-color: transparent;
+  outline: transparent;
+  padding-left: 38px;
+  color: var(--dark);
+}
+
+.modal-form-field:focus {
+  border-color: var(--primary-brand);
+  outline-color: transparent;
+  outline-offset: 1px;
+}
+
+.modal-form-field:focus + .modal-form-icon {
+  fill: var(--primary-brand);
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  fill: var(--dark);
+  transition: fill var(--transition-dur-and-func);
+}
+
+.modal-form-textarea-wrapper {
+  margin-bottom: 16px;
+}
+
+.modal-form-textarea {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: border-color var(--transition-dur-and-func);
+
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: 1px solid var(--modal-color);
+  color: var(--modal-color);
+  outline: transparent;
+  line-height: 1.17;
+  background-color: transparent;
+}
+
+.modal-form-textarea:focus {
+  border-color: var(--primary-brand);
+}
+
+.modal-form-textarea::placeholder {
+  color: var(--modal-color);
+}
+
+.modal-form-checkbox-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.modal-form-checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.custom-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--modal-color);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: fill var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func),
+    border var(--transition-dur-and-func);
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
+  margin-right: 8px;
+}
+
+.modal-form-checkbox:checked + .checkbox-label > .custom-checkbox {
+  fill: var(--light);
+  background-color: var(--pressed-state);
+  border: none;
+}
+
+.modal-form-checkbox:focus + .checkbox-label > .custom-checkbox {
+  border-color: var(--primary-brand);
+}
+
+.checkbox-link {
+  color: var(--primary-brand);
+  transition: color var(--transition-dur-and-func);
+}
+
+.checkbox-link:hover,
+.checkbox-link:focus {
+  color: var(--pressed-state);
+}
+
+.modal-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
+  min-width: 169px;
+}
+
+@media screen and (max-width: 767.99px) {
+  .modal {
+    padding: 72px 16px 24px 16px;
+    width: 100%;
+    max-width: 392px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157.99px) {
+  .modal {
+    padding: 72px 24px 24px 24px;
+    width: 408px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .modal {
+    padding: 72px 24px 24px 24px;
+    width: 408px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
