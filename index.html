@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <!-- Header -->
@@ -41,6 +41,17 @@
           </ul>
         </nav>
 
+        <button
+          class="mobile-menu-open-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+
         <address class="contacts">
           <ul class="list contacts-list">
             <li class="contacts-item">
@@ -60,7 +71,7 @@
 
     <main>
       <!-- Hero section -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button
@@ -71,10 +82,10 @@
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!-- Benefits -->
-      <section class="benefits">
+      <!-- <section class="benefits">
         <div class="container benefits-container">
           <h2 class="visually-hidden">Our Benefits</h2>
           <ul class="list benefits-list">
@@ -136,10 +147,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- What are we doing -->
-      <section class="what-we-do">
+      <!-- <section class="what-we-do">
         <div class="container what-we-do-container">
           <h2 class="section-title what-we-do-title">What are we doing</h2>
           <ul class="list what-we-do-list">
@@ -169,10 +180,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Team -->
-      <section class="team">
+      <!-- <section class="team">
         <div class="container team-container">
           <h2 class="section-title team-title">Our Team</h2>
           <ul class="list team-list">
@@ -398,10 +409,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Team -->
-      <section class="customers">
+      <!-- Customers -->
+      <!-- <section class="customers">
         <div class="container customers-container">
           <h2 class="section-title customers-title">Customers</h2>
           <ul class="list customers-list">
@@ -449,11 +460,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-description">
           <a href="./index.html" class="link logo footer-logo">
@@ -530,9 +541,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- Modal -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button modal-close" data-modal-close>
           <svg width="8" height="8" class="modal-close-icon">
@@ -630,8 +642,103 @@
           </button>
         </form>
       </div>
+    </div> -->
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button type="button" class="button mobile-menu-close js-close-menu">
+          <svg width="8" height="8" class="mobile-menu-close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu-nav">
+          <ul class="list mobile-menu-nav-list">
+            <li class="mobile-menu-nav-item active">
+              <a href="./index.html" class="link mobile-menu-nav-link active"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a href="./portfolio.html" class="link mobile-menu-nav-link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a href="" class="link mobile-menu-nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu-wrapper">
+          <address class="mobile-menu-contacts">
+            <ul class="list mobile-menu-contacts-list">
+              <li class="mobile-menu-phone">
+                <a href="tel:+110001111111" class="link contacts-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-email">
+                <a href="mailto:info@devstudio.com" class="link contacts-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="list team-item-icon-list">
+            <li class="team-item-icons-item">
+              <a href="#" class="link team-item-icon-link">
+                <svg width="24" height="24" class="team-item-icon">
+                  <use
+                    href="./images/icons.svg#icon-instagram"
+                    aria-label="Instagram icon"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-item-icons-item">
+              <a href="#" class="link team-item-icon-link">
+                <svg width="24" height="24" class="team-item-icon">
+                  <use
+                    href="./images/icons.svg#icon-twitter"
+                    aria-label="Twitter icon"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-item-icons-item">
+              <a href="#" class="link team-item-icon-link">
+                <svg width="24" height="24" class="team-item-icon">
+                  <use
+                    href="./images/icons.svg#icon-facebook"
+                    aria-label="Facebook icon"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-item-icons-item">
+              <a href="#" class="link team-item-icon-link">
+                <svg width="24" height="24" class="team-item-icon">
+                  <use
+                    href="./images/icons.svg#icon-linkedin"
+                    aria-label="Linkedin icon"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

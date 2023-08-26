@@ -1,0 +1,18 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --accent-font: 'Raleway', sans-serif;
+
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --white: #ffffff;
+  --success: #31d0aa;
+  --modal-background: #fcfcfc;
+  --modal-color: rgba(46, 47, 66, 0.4);
+
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
