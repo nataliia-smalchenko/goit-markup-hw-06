@@ -48,7 +48,9 @@
   }
 }
 
-@media screen and (max-width: 767.99px) and (min-resolution: 192dpi) {
+@media screen and (max-width: 767.99px) and (min-resolution: 192dpi),
+  screen and (max-width: 767.99px) and (min-resolution: 2dppx),
+  screen and (max-width: 767.99px) and (min-device-pixel-ratio: 2) {
   .hero {
     background-image: linear-gradient(
         to bottom,
@@ -86,7 +88,9 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157.99px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 768px) and (max-width: 1157.99px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (max-width: 1157.99px) and (min-resolution: 2dppx),
+  screen and (min-width: 768px) and (max-width: 1157.99px) and (min-device-pixel-ratio: 2) {
   .hero {
     background-image: linear-gradient(
         to bottom,
@@ -124,7 +128,9 @@
   }
 }
 
-@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi),
+  screen and (min-width: 1158px) and (min-resolution: 2dppx),
+  screen and (min-width: 1158px) and (min-device-pixel-ratio: 2) {
   .hero {
     background-image: linear-gradient(
         to bottom,

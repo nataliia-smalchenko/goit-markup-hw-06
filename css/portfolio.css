@@ -3,7 +3,7 @@
 @import './base/buttons.css';
 @import './base/common.css';
 @import './base/container.css';
-@import './base/section-title.css';
 
 @import './layout/header.css';
+@import '';
 @import './layout/footer.css';

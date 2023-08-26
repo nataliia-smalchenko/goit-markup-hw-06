@@ -3,9 +3,12 @@
 @import './base/buttons.css';
 @import './base/common.css';
 @import './base/container.css';
-@import './base/section-title.css';
 
 @import './layout/header.css';
 @import './layout/hero.css';
 @import './layout/modal.css';
+@import '';
+@import './layout/what-we-do.css';
+@import './layout/team.css';
+@import '';
 @import './layout/footer.css';
