@@ -18,7 +18,7 @@
   background-color: var(--pressed-state);
 }
 
-.button-light {
+/* .button-light {
   background-color: var(--light);
   color: var(--primary-brand);
   font-family: var(--primary-font);
@@ -43,4 +43,4 @@
   border: 1px solid transparent;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-}
+} */
