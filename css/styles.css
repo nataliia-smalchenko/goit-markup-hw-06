@@ -1,35 +1,3 @@
-.button:hover,
-.button:focus {
-  background-color: var(--pressed-state);
-  color: var(--white);
-}
-
-.section-title {
-  font-size: 36px;
-  line-height: 1.11;
-  color: var(--dark);
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 0.02em;
-  margin-bottom: 72px;
-}
-
-.button-accent {
-  font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: var(--primary-brand);
-  color: var(--white);
-  letter-spacing: 0.04em;
-
-  padding: 16px 32px;
-  border: 0;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition: background-color var(--transition-dur-and-func);
-}
-
 .button-light {
   background-color: var(--light);
   color: var(--primary-brand);
@@ -50,54 +18,12 @@
 
 .button-light:hover,
 .button-light:focus {
+  background-color: var(--pressed-state);
+  color: var(--white);
   border: 1px solid transparent;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-
-/* ============ CUSTOMERS SECTION  ============= */
-
-.customers {
-  background-color: var(--white);
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.customers-list {
-  display: flex;
-  gap: 24px;
-}
-
-.customers-list-item {
-  width: calc((100% - 120px) / 6);
-  height: 88px;
-}
-
-.customer-link {
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--subtle-text);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--subtle-text);
-
-  transition: border-color var(--transition-dur-and-func),
-    color var(--transition-dur-and-func);
-}
-
-.customer-link:hover,
-.customer-link:focus {
-  border-color: var(--pressed-state);
-  color: var(--pressed-state);
-}
-
-.customer-icon {
-  fill: currentColor;
-}
-
-/* ============ /CUSTOMERS SECTION  ============= */
 
 /* ============ FOOTER ============= */
 
